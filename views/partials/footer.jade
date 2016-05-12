@@ -1,0 +1,88 @@
+section#footer
+	.inner
+		
+		//-----------------
+		//- Static content
+		//-----------------
+		//-h2.major.
+			Get in touch
+		//-p.
+			We would love to hear you. Go ahead and share your ideas, thoughts, on concerns in the form below. You should aslo drop by any of our social media pages and say hello.
+
+		
+		
+
+		//-----------------
+		//- Dynamic content
+		//-----------------
+		
+		//- hack: not sure why payload contains several empty post objects
+		if wordpress.post			
+			//- need to reverse order of payload
+			//- wordpress.post.reverse()
+			//- fetch post for this section
+			- var post = wordpress.post[4]
+
+			//- render section content
+			h2.major= post.title
+			div!= post.content
+
+	
+	
+
+		//-----------------
+		//- call to action
+		//-----------------
+
+		//- contact form
+		form(method="post" action="#")
+			.field
+				label(for="name").
+					Name
+				input#name(type="text" name="name")
+			
+			div.field
+				label(for="email").
+					Email
+				input#email(type="email" name="email")
+			
+			div.field
+				label(for="message").
+					Message
+				textarea#message(name="message" rows="4")
+			
+			ul.actions
+				li
+					input(type="submit" value="Send Message")
+
+
+		//- contact info
+		ul.contact.hidden
+			li.fa-home.
+				Involved Community Network <br>
+				110 Rev. Dr. Isaac Cole Plz <br>
+				Atlantic City, NJ 08401
+
+			li.fa-phone.
+				(000) 000-0000
+			li.fa-envelope
+				a(href="#").
+					information@untitled.tld
+			li.fa-twitter
+				a(href="#").
+					twitter.com/untitled-tld
+			li.fa-facebook
+				a(href="#").
+					facebook.com/untitled-tld
+			li.fa-instagram
+				a(href="#").
+					instagram.com/untitled-tld
+		
+
+		//- copyright
+		ul.copyright
+			li.
+				&copy; Involved Community Network. All rights reserved.
+			li.
+				Powered by: #[a(href="http://www.randychampagne.com") Randy Champagne | Web Development]
+		

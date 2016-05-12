@@ -1,0 +1,39 @@
+//- metadata code block
+include ./partials/head
+
+
+body
+
+	.page-wrapper
+		// header section
+		include ./partials/header
+
+		// jumbotron
+		include ./partials/jumbotron
+
+		// main content
+		.wrapper
+			// whatwedo
+			include ./partials/whatwedo
+
+			// conceptproposal
+			include ./partials/conceptproposal
+
+			// planningcommittee
+			include ./partials/planningcommittee
+
+
+	// footer section
+	include ./partials/footer
+
+
+	// JS libraries and scripts
+	//- vendor libs
+	script(src='js/libs/jquery/jquery.min.js')
+	script(src='js/libs/n33/jquery.scrollex/jquery.scrollex.min.js')
+	script(src='js/libs/jquery.scrolly/jquery.scrolly.min.js')
+	script(src='js/libs/n33/skel/skel.min.js')
+	script(src='js/libs/n33/util.js')
+	//- project scripts
+	script(src='js/main.js')
+

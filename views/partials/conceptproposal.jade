@@ -1,0 +1,41 @@
+section#two.wrapper.alt.spotlight.style2
+	.inner
+		a.image(href="#")
+			img(src="img/pic02.jpg" alt="")
+		.content
+		
+			//-----------------
+			//- Static content
+			//-----------------
+			//-h2.major.
+				Submit a Concept Proposal
+			//-p.
+				Calling all producers and film-makers! We are looking for content to inspire and strenghten the community. We welcome Concept Papers. Click the button below to access the submission page
+
+		
+		
+
+			//-----------------
+			//- Dynamic content
+			//-----------------
+			
+			//- hack: not sure why payload contains several empty post objects
+			if wordpress.post			
+				//- need to reverse order of payload
+				//- wordpress.post.reverse()
+				//- fetch post for this section
+				- var post = wordpress.post[2]
+
+				//- render section content
+				h2.major= post.title
+				div!= post.content
+
+		
+		
+
+			//-----------------
+			//- call to action
+			//-----------------
+			a.special(href="https://docs.google.com/forms/d/1uhMx8kKGPWwcgtXdCdBjW4ixq9Zk0lMWBu6P40eNhxQ/viewform" target="_blank").
+				Submit a proposal
+			

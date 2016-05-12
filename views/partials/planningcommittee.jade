@@ -1,0 +1,42 @@
+section#three.wrapper.spotlight.style3
+	.inner
+		a.image(href="#")
+			img(src="img/pic03.jpg" alt="")
+		.content
+		
+			//-----------------
+			//- Static content
+			//-----------------
+			//-h2.major.
+				Join a Planning Committee
+			//-p.
+				Join us on this exciting adventure. We are looking for motivated, creative individuals who want to give back to the community. There are many ways you can contribute. Click the button below to register
+
+		
+		
+
+			//-----------------
+			//- Dynamic content
+			//-----------------
+			
+			//- hack: not sure why payload contains several empty post objects
+			if wordpress.post			
+				//- need to reverse order of payload
+				//- wordpress.post.reverse()
+				//- fetch post for this section
+				- var post = wordpress.post[3]
+
+				//- render section content
+				h2.major= post.title
+				div!= post.content
+
+		
+		
+
+			//-----------------
+			//- call to action
+			//-----------------
+			
+			a.special(href="https://docs.google.com/forms/d/18b7P3v8FVxcL0Vu__3uSM2fvkXczMHKp9RAeTDlg8PE/viewform" target="_blank").
+				Get Involved
+			

@@ -1,0 +1,40 @@
+<h1 id="skel">Skel</h1>
+<p>Skel is a lightweight framework for building responsive sites and web apps.</p>
+<ul>
+<li>Minified production versions: <a href="dist/"><code>dist/</code></a></li>
+<li>Documentation: <a href="docs/skel.md">Skel</a>, <a href="docs/skel-layout.md">Layout</a>, <a href="docs/skel-viewport.md">Viewport</a>, and <a href="docs/skel.scss.md">Skel.scss</a></li>
+<li>Unminified sources: <a href="src/"><code>src/</code></a></li>
+<li>Baseline, a simple boilerplate built on Skel + Skel.scss: <a href="http://github.com/n33/baseline">github.com/n33/baseline</a></li>
+</ul>
+<p><em>(Looking for the previous version of Skel? Go here: <a href="http://github.com/n33/skel.old">github.com/n33/skel.old</a>)</em></p>
+<h2 id="modules">Modules</h2>
+<p>Previous versions of Skel were basically monolithic (ie. <code>skel.min.js</code> contained <strong>all</strong> of Skel&#39;s functionality, even if you didn&#39;t need all of it). As of version 3, Skel uses a modular approach to give you more flexibility in how you use it. Here&#39;s how it (currently) breaks down:</p>
+<ul>
+<li><p><strong>Skel</strong> (<code>skel.min.js</code>)</p>
+<p>  <em>(Main framework)</em> Provides JS access to CSS breakpoints, events, and other tools.</p>
+</li>
+<li><p><strong>Layout</strong> (<code>skel-layout.min.js</code>)</p>
+<p>  <em>(Module)</em> Adds CSS and page layout tools, including a CSS grid system, browser resets and more.</p>
+</li>
+<li><p><strong>Viewport</strong> (<code>skel-viewport.min.js</code>)</p>
+<p>  <em>(Module)</em> Adds simplified viewport management (including support for multiple viewport <code>&lt;meta&gt;</code> tags).</p>
+</li>
+<li><p><strong>Skel.scss</strong> (<code>_skel.scss</code>)</p>
+<p>  <em>(Sass framework)</em> A Sass-based implementation of Skel. Merges certain aspects of Skel and its Layout module (while adding some handy new mixins). Designed to work independently <strong>or</strong> in conjunction with Skel for added effect.</p>
+</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<ul>
+<li>DOMReady (<a href="http://github.com/ded/domready">http://github.com/ded/domready</a> | (c) Dustin Diaz | MIT license)</li>
+<li>matchMedia (<a href="http://github.com/paulirish/matchMedia.js">http://github.com/paulirish/matchMedia.js</a> | (c) Scott Jehl, Paul Irish, Nicholas Zakas, David Knight | Dual MIT/BSD license)</li>
+<li>UMD Wrapper (<a href="http://github.com/umdjs/umd/blob/master/returnExports.js">http://github.com/umdjs/umd/blob/master/returnExports.js</a> | @umdjs + @nason)</li>
+<li>CSS Resets (<a href="http://meyerweb.com/eric/tools/css/reset">http://meyerweb.com/eric/tools/css/reset</a> | Eric Meyer | Public domain)</li>
+<li>Normalize (<a href="http://necolas.github.io/normalize.css">http://necolas.github.io/normalize.css</a> | Nicolas Gallagher, Jonathan Neal | MIT License)</li>
+<li>Various Sass functions by Hugo Giraudel (<a href="http://hugogiraudel.com">http://hugogiraudel.com</a> | @hugogiraudel)</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Skel, Layout, Viewport, and Skel.scss are released under the MIT license.</p>
+<p>Copyright (c) n33</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>

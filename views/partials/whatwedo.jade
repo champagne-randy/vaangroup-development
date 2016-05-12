@@ -1,0 +1,50 @@
+section#one.wrapper.spotlight.style1
+	.inner
+		a.image(href="#")
+			img(src="img/pic01.jpg" alt="")
+		.content
+		
+			//-----------------
+			//- Static content
+			//-----------------
+			//-h2.major.
+				What we do
+			//-p.
+				We at <strong>Involved Community Engagement Network</strong> strongly believe that a community is elevated when members join in to create content that nourishes the soul.
+			//-p.
+				We provide a platform that empowers you to create the kind of fun, wholesome, educational, creative television content that uplift our community.
+			//-p.
+				Whether you are an organization working to remedy a problem in the community, an educator looking to amplify your voice, or a chef who wishes to share delicious recipes, we are a conduit that delivers your message directly to your audience's living room and mobile electronics devices.
+
+		
+		
+
+			//-----------------
+			//- Dynamic content
+			//-----------------
+			
+			//- hack: not sure why payload contains several empty post objects
+			if wordpress.post			
+				//- need to reverse order of payload
+				//- wordpress.post.reverse()
+				//- fetch post for this section
+				- var post = wordpress.post[1]
+
+				//- render section content
+				h2.major= post.title
+				div!= post.content
+
+		
+		
+
+			//-----------------
+			//- call to action
+			//-----------------
+			a.special(href="https://docs.google.com/forms/d/18b7P3v8FVxcL0Vu__3uSM2fvkXczMHKp9RAeTDlg8PE/viewform" target="_blank").
+				Get Involved
+
+
+
+
+
+			

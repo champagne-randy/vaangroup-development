@@ -1,0 +1,32 @@
+section#banner
+	.inner
+		.logo
+			span.icon.fa-diamond
+		
+		//-----------------
+		//- Static content
+		//-----------------
+		//-h2.
+			ICE Network
+		//-p.
+			A Television Network and platform for <strong>Involved Community Engagement</strong> in the greater South Jersey area
+
+		
+		
+
+		//-----------------
+		//- Dynamic content
+		//-----------------
+		
+		//- hack: not sure why payload contains several empty post objects
+		if wordpress.post			
+			//- need to reverse order of payload
+			- wordpress.post.reverse()
+			//- fetch post for this section
+			- var post = wordpress.post[0]
+
+			//- render section content
+			h2= post.title
+			div!= post.content
+
+		

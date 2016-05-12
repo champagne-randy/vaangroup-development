@@ -1,0 +1,45 @@
+include ./partials/head
+
+body
+	.wrapper
+
+		//- verify that payload is received
+		- console.log(wordpress.post)
+		
+
+		//- hack: not sure why payload contains several empty post objects
+		if wordpress.post
+			//- let's reverse order
+			//- wordpress.post.reverse()
+			ul
+				each post in wordpress.post
+					li 
+						h3 #{post.ID} - #{post.title}
+						p!= post.content
+
+
+
+
+
+		//-
+			console.log(wordpress.post)
+			console.log(typeof wordpress.post)
+			var posts, one, two, three
+			
+			for( var i in wordpress.post)
+				console.log(wordpress.post)
+				posts = Object.getOwnPropertyNames(wordpress.post)
+
+				//-if post.ID. == '1'
+				//-	one = post
+				//-if post.ID. == '7'
+				//-	two = post
+				//-if post.ID. == '9'
+				//-	three = post
+
+
+
+		ul
+			//-li= JSON.stringify(one,2)
+			//-li= two.content
+			//-li= three.content
