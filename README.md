@@ -14,7 +14,7 @@
 
 
 
-## About Me
+## About
 
 **[The Vaan Group](http://vaangroup.com/)<br>Brooklyn, NY**
 
