@@ -1,10 +1,11 @@
-axis         = require 'axis'
-rupture      = require 'rupture'
-autoprefixer = require 'autoprefixer-stylus'
-css_pipeline = require 'css-pipeline'
-browserify   = require 'roots-browserify'
-babelify     = require 'babelify'
-cmsEndpoint  = ''
+axis           = require 'axis'
+rupture        = require 'rupture'
+autoprefixer   = require 'autoprefixer-stylus'
+css_pipeline   = require 'css-pipeline'
+browserify     = require 'roots-browserify'
+babelify       = require 'babelify'
+image_pipeline = require 'roots-image-pipeline'
+cmsEndpoint    = ''
 
 
 module.exports =
@@ -30,6 +31,7 @@ module.exports =
       sourceMap: true
       transform: babelify
       out: 'js/main.js'
+    image_pipeline(files: "assets/img/**", out: 'img', compress: true)
     
   ]
 

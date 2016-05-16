@@ -14,6 +14,7 @@ The tech debt list for version 0.1.x
 ### Update app.production.coffee
 
 * remove wordpress related imports/configs
+* setup image_pipeline
 
 
 
