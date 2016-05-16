@@ -26,6 +26,12 @@ The tech debt list for version 0.1.x
 
 
 
+### Add excludes to image_pipeline
+
+* favicon.ico doesn't need compression
+
+
+
 
 
 
