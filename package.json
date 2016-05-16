@@ -1,6 +1,6 @@
 {
-  "name": "icenetwork",
-  "description": "A mobile-first responsive site",
+  "name": "thevaangroup",
+  "description": "We're a Brooklyn New York based Digital Design Firm",
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
     "axis": "0.5.x",
@@ -20,6 +20,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/icenetworktv/development.git"
+    "url": "https://github.com/thevaangroup/development.git"
   }
 }
