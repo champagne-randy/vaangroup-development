@@ -32,7 +32,6 @@ module.exports =
       transform: babelify
       out: 'js/main.js'
     image_pipeline(files: "assets/img/**", out: 'img', compress: true)
-    
   ]
 
 

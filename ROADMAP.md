@@ -1,6 +1,8 @@
 # Roadmap for vaangroup.com
 
-This Doc lists ideas and next steps for the next releases of this project
+This Doc lists issues/ideas and next steps for the next releases of this project
+
+
 
 
 
@@ -13,8 +15,8 @@ The tech debt list for version 0.1.x
 
 ### Update app.production.coffee
 
-* remove wordpress related imports/configs
-* setup image_pipeline
+* ✔ remove wordpress related imports/configs
+* ✔ setup image_pipeline
 
 
 
