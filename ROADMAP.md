@@ -10,7 +10,15 @@ This Doc lists ideas and next steps for the next releases of this project
 The tech debt list for version 0.1.x
 
 
-#### Update JS and CSS pipelines
+
+### Update app.production.coffee
+
+* remove wordpress related imports/configs
+
+
+
+### Update JS and CSS pipelines
+
 * this will output relative paths making it easier to reference main files in sub directories
 * update `!= css()` to `!= css(/)`
 * update `!= js()` to `!= js(/)`
@@ -20,12 +28,12 @@ The tech debt list for version 0.1.x
 
 
 
-### Next major release
+## Next major release
 
 The tech debt list for version 1.x.x
 
 
-#### Update Roots build recipe
+### Update Roots build recipe
 
 * build a `.json` file that models the site-map (pages and copy)
 * setup unit or end-to-end tests to verify that there are html files for each page sepcified in the '.json' specs
