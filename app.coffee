@@ -37,8 +37,8 @@ module.exports =
     js_pipeline(files: 'assets/js/**/*')
 
     # temporarily disabled image compression during development
-    #image_pipeline(files: "assets/img/**", out: 'img', compress: true)
-    image_pipeline(files: "assets/img/**", out: 'img')
+    image_pipeline(files: "assets/img/**", out: 'img', compress: true)
+    #image_pipeline(files: "assets/img/**", out: 'img')
   ]
 
 
