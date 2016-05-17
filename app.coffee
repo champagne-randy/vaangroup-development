@@ -31,7 +31,9 @@ module.exports =
       sourceMap: true
       transform: babelify
       out: 'js/main.js'
-    image_pipeline(files: "assets/img/**", out: 'img', compress: true)
+    #temporarily disabled image compression during development
+    #image_pipeline(files: "assets/img/**", out: 'img', compress: true)
+    image_pipeline(files: "assets/img/**", out: 'img')
   ]
 
 
