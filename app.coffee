@@ -2,6 +2,7 @@ axis           = require 'axis'
 rupture        = require 'rupture'
 autoprefixer   = require 'autoprefixer-stylus'
 css_pipeline   = require 'css-pipeline'
+js_pipeline    = require 'js-pipeline'
 browserify     = require 'roots-browserify'
 babelify       = require 'babelify'
 image_pipeline = require 'roots-image-pipeline'
@@ -26,12 +27,16 @@ module.exports =
 
   extensions: [
     css_pipeline(files: 'assets/css/*.styl')
-    browserify
-      files: 'assets/js/main.es6'
-      sourceMap: true
-      transform: babelify
-      out: 'js/main.js'
-    #temporarily disabled image compression during development
+
+    # temporarily replaced browserify with js_pipeline
+    #browserify
+    #  files: 'assets/js/main.es6'
+    #  sourceMap: true
+    #  transform: babelify
+    #  out: 'js/main.js'
+    js_pipeline(files: 'assets/js/**/*'
+
+    # temporarily disabled image compression during development
     #image_pipeline(files: "assets/img/**", out: 'img', compress: true)
     image_pipeline(files: "assets/img/**", out: 'img')
   ]

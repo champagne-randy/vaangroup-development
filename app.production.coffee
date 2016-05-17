@@ -26,11 +26,15 @@ module.exports =
 
   extensions: [
     css_pipeline(files: 'assets/css/*.styl', minify: true, hash: true)
-    browserify
-      files: 'assets/js/main.es6'
-      sourceMap: false
-      transform: babelify
-      out: 'js/main.js'
+    
+    # temporarily replaced browserify with js_pipeline
+    #browserify
+    #  files: 'assets/js/main.es6'
+    #  sourceMap: true
+    #  transform: babelify
+    #  out: 'js/main.js'
+    js_pipeline(files: 'assets/js/**/*'
+
     image_pipeline(files: "assets/img/**", out: 'img', compress: true)
   ]
 
