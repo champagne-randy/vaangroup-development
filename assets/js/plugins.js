@@ -23,6 +23,8 @@ var e=this.getItems(t);e=e.length?e:this.items,this._updateItemsSortData(e)},d.p
  */
 ;(function($, window, document, undefined) {
 
+	console.log("Hello from plugin.js")
+
 	var drag, state, e;
 
 	/**
