@@ -3,42 +3,163 @@ include ./includes/head
 
 
 body
-	h1 Index
+	// .loader
+	.loader
+		i(class="fa fa-refresh fa-spin")
+	// /.loader
+
+	// ================= main start ================ 
+	#main
+		// =============== header =============== 
+		header
+			// .header-inner 
+			.header-inner
+				// .logo-holder
+				.logo-holder
+					a(href="index.html")
+						img(src="img/TVG_LOGO_NEW_BLACK.svg" alt="")
+				// /.logo-holder
+				// navigation
+				include ./includes/navigation
+				// / navigation
+			// /.header-inner
+
+
+		// =============== wrapper =============== 
+		#wrapper
+			// =============== Content holder  =============== 
+			.content-holder.elem.scale-bg2.transition3
+				// .fixed-title
+				.fixed-title
+					span Works
+				// /.fixed-title
+
+				// =============== Content =============== 
+				.content.full-height
+					.resize-carousel-holder
+						#gallery_horizontal.gallery_horizontal
+							// ann_taylor - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/ann_taylor/ann-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/ann.html") $450M e-commerce giant gets a redesign
+							// / gallery item
+
+							// juisi - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/juisi/juisi-cs-background-1.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/juisi.html") The web launch of a national cold-pressed juice brand
+							// / gallery item
+
+							// rvs - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/rvs/rvs-main-bg.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/rvs.html") View Case Study
+							// / gallery item
+
+							// loft - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/loft/loft-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/loft.html") View Case Study
+							// / gallery item
+
+							// sko - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/sko/sko-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/sko.html") View Case Study
+							// / gallery item
+
+							// goat - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/goat/goat-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/goat.html") View Case Study
+							// / gallery item
+
+							// niucoco - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/niucoco/niucoco-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/niucoco.html") View Case Study
+							// / gallery item
+
+							// lougrey - gallery ttem
+							.horizontal_item
+								.overlay
+								img(src="img/lougrey/lougrey-cs-background.jpg" alt="")
+								.port-desc-holder
+									.port-desc
+										.grid-item
+											h3
+												a(href="projects/lougrey.html") View Case Study
+							// / gallery item
 
 
 
 
-//-
-	.page-wrapper
-		// header section
-		include ./partials/header
-
-		// jumbotron
-		include ./partials/jumbotron
-
-		// main content
-		.wrapper
-			// whatwedo
-			include ./partials/whatwedo
-
-			// conceptproposal
-			include ./partials/conceptproposal
-
-			// planningcommittee
-			include ./partials/planningcommittee
 
 
-	// footer section
-	include ./partials/footer
 
 
-	// JS libraries and scripts
-	//- vendor libs
-	script(src='js/libs/jquery/jquery.min.js')
-	script(src='js/libs/n33/jquery.scrollex/jquery.scrollex.min.js')
-	script(src='js/libs/jquery.scrolly/jquery.scrolly.min.js')
-	script(src='js/libs/n33/skel/skel.min.js')
-	script(src='js/libs/n33/util.js')
-	//- project scripts
-	script(src='js/main.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
 
