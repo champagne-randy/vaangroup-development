@@ -35,7 +35,9 @@ module.exports =
     #  out: 'js/main.js'
     js_pipeline(files: 'assets/js/**/*')
 
-    image_pipeline(files: "assets/img/**", out: 'img', compress: true)
+    # temporarily disabled image compression during development
+    #image_pipeline(files: "assets/img/**", out: 'img', compress: true)
+    #image_pipeline(files: "assets/img/**", out: 'img')
   ]
 
   stylus:
