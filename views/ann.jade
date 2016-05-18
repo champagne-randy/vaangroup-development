@@ -1,0 +1,88 @@
+extends ./_featuredProjects
+
+block content
+
+
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			// .fixed-title
+			.fixed-title
+				span Ann Taylor
+
+			// =============== Content  ===============
+			.content
+				// Page title section
+				section.parallax-section
+					.overlay
+					.bg(style="background-image:url(img/ann_taylor/ann-background.jpg)" data-top-bottom="transform: translateY(200px);" data-bottom-top="transform: translateY(-200px);")
+					.container
+						h2 Ann Taylor
+						.separator-image
+							img(src="img/separator.png" alt="")
+						h3.subtitle A fashion behemoth gets a digital makeover.
+					a.custom-scroll-link.sect-scroll(href="#sec1")
+						i.fa.fa-angle-double-down
+				// Page title section end
+				// Content
+				.sections-bg
+					section#sec1
+						.container.column-container
+							.row
+								// project images
+								.col-md-7
+									.vertical-gallery.popup-gallery
+										.box-item
+											a(href="img/ann_taylor/at_in_store_app_mock.png")
+												img.respimg(src="img/ann_taylor/at_in_store_app_mock.png" alt="")
+										.box-item
+											a(href="img/ann_taylor/at_pdp_desktop_mocks.png")
+												img.respimg(src="img/ann_taylor/at_pdp_desktop_mocks.png" alt="")
+										.box-item
+											a(href="img/ann_taylor/at_style_guide_mock.png")
+												img.respimg(src="img/ann_taylor/at_style_guide_mock.png" alt="")
+									.project-box
+										.content-nav
+											ul
+												li
+													a(href="feast.html")
+														i.fa.fa-long-arrow-left
+												li
+													span &#47;
+												li
+													a(href="juisi.html")
+														i.fa.fa-long-arrow-right
+											.p-all
+												a(href="index.html")
+													i.fa.fa-th-large
+								// project images end
+								// project  information
+								.col-md-5
+									.fix-box
+										.project-box
+											h3 Details
+											p Founded in 1954, Ann Taylor has, over the years, established itself as one of the most recognizable brand names in women's classic apparel. Traditionally a brick & mortar-focused business, in recent years, the mass proliferation of well-designed, competing e-commerce stores, and an increasingly tech-savvy consumer base signaled that it was time to revamp ANNTAYLOR.com. With a keen eye on the details that make for an easy-to-navigate interface and delightful user experience across all viewing devices, the brand tapped The Vaan Group as their go-to UX design team to lead the charge.
+											p View site: 
+												a(href="http://www.anntaylor.com/") www.anntaylor.com
+				// Content end
+				// Share container
+				.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+			// content holder end
+		// wrapper end
+		.left-decor
+		.right-decor
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
