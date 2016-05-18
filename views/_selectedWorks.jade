@@ -1,0 +1,69 @@
+//-
+	ToDo:
+	- prep for roots-contentful integration by making this template abstract 
+
+
+
+extends ./_layout
+
+block theContent
+
+
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			// .fixed-title
+			.fixed-title
+				span Ann Taylor
+			// =============== Content  ===============
+			.content.full-height
+				// =============== description column  ===============-->
+				.fixed-info-container
+					h3 Kunhardt Films
+					.separator
+					.clearfix
+					p On the heels of a successful debut of their latest film, "Jim: The James Foley Story," Kunhardt Films wanted to update their website. We worked with the principals to create a site that embodies the ethos of this production house and showcases their portfolio of projects in a modern and interactive way.
+					p View site: 
+						a(href="http://kunhardtfilms.com/") www.kunhardtfilms.com
+					h4 Info
+					.content-nav
+						ul
+							li
+								a(href="festy.html")
+									i.fa.fa-long-arrow-left
+							li
+								span &#47;
+							li
+								a(href="strengthinnumbers.html")
+									i.fa.fa-long-arrow-right
+						.p-all
+							a(href="index.html")
+								i.fa.fa-th-large
+				// description column end
+				// portfolio  Images
+				.resize-carousel-holder.vis-info
+					.swiper-container.viom#horizontal-slider(data-mwc="1" data-mwa="0")
+						.swiper-wrapper
+							// =============== 1 ===============
+							.swiper-slide
+								.bg.bg-slider(style="background-image:url(img/kfilms/kf-films.png)")
+								.zoomimage
+									img.intense(src="img/kfilms/kf-films.png" alt="")
+									i.fa.fa-expand
+							// 1 end
+						.pagination
+					// slider navigation
+					.swiper-nav-holder.hor.hs
+						a.swiper-nav.arrow-left.transition(href="#")
+							i.fa.fa-angle-left
+						a.swiper-nav.arrow-right.transition(href="#")
+							i.fa.fa-angle-right
+					// slider navigation  end
+			// Content end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor

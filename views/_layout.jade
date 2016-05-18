@@ -1,0 +1,39 @@
+//- metadata code block
+include ./includes/head
+
+body
+
+	// .loader
+	.loader
+		i(class="fa fa-refresh fa-spin")
+	// /.loader
+
+	// ================= main start ================ 
+	#main
+		// =============== header =============== 
+		header
+			// .header-inner 
+			.header-inner
+				// .logo-holder
+				.logo-holder
+					a(href="index.html")
+						img(src='img/TVG_LOGO_NEW_BLACK.svg' alt='')
+				// /.logo-holder
+				// navigation
+				include ./includes/navigation
+				// / navigation
+			// /.header-inner
+
+
+		block theContent
+
+
+
+
+		// =============== footer ===============
+		include ./includes/footer
+		// =============== / footer ===============
+
+
+	// =============== scripts  ===============
+	!= js('/')
