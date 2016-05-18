@@ -16,7 +16,7 @@ module.exports =
     'LICENSE',
     'bower*', 
     'bower_components/**', 
-    'views/partials/**', 
+    'views/includes/**', 
     '**/layout.*', 
     '**/_*', 
     '.gitignore', 
