@@ -1,6 +1,146 @@
-//- metadata code block
-include ./includes/head
+extends ./_layout
+
+block theContent
 
 
-body
-	h1 Services
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			// =============== Content  ===============
+			.content.full-height
+				// Fixed title
+				.fixed-title
+					span About Us
+				// Page navigation
+				.scroll-page-nav
+					ul
+						li
+							a(href="#sec1")
+						li
+							a(href="#sec2")
+						li
+							a(href="#sec3")
+						li
+							a(href="#sec4")
+						li
+							a(href="#sec5")
+				// Page navigation end
+              
+				// About
+				// About end
+               
+				// Team
+				// Team end
+
+				// services
+				section.section-columns#sec4
+					.section-columns-img
+						.bg.bg-ser.transition(style="background-image:url(img/services/bg.jpg)")
+					.section-columns-text
+						.custom-inner
+							.container
+								h2 Services
+								.separator
+								.clearfix
+								h3.subtitle We're a full service digital agency. If you have questions about how to optimize your business, we have answers.
+								ul.servicses-holder
+									// 1
+									li(data-bgscr="img/services/user-experience.jpg")
+										i.fa.fa-object-ungroup
+										h4 User Experience
+										p To us, everything starts and ends with your users. Our process is carefully crafted around creating the best user experience while meeting the objectives of your business — whether you're looking to increase traffic to your blog or optimize conversions during checkout for your e-commerce store.
+									// 1 end
+									// 2
+									li(data-bgscr="img/services/mobile-apps.jpg")
+										i.fa.fa-signal
+										h4 Mobile Applications
+										p While it's not exactly news that our world is becoming increasingly mobile-oriented, we still often see missteps when it comes to creating an authentic mobile-friendly experience. We always use the latest strategies, techniques and technologies to create immersive and delightful mobile applications that keep users engaged and coming back for more.
+									// 2 end
+									// 3
+									li(data-bgscr="img/services/ecommerce.jpg")
+										i.fa.fa-shopping-cart
+										h4 E-commerce
+										p Selling your product online isn't quite as simple as setting up an eBay account anymore. With more and more companies investing in creating beautiful and conversion-optimizing stores, the competition for digital dominance has become more intense than ever. Luckily, our team of e-commerce experts has taken more than a few businesses through the motions, and the numbers don't lie — from increases in B2B inquiries and B2C transactions, to decreases in customer service calls, we devise custom strategies for each client.
+									// 3 end
+									// 4
+									li(data-bgscr="img/services/web-design.jpg")
+										i.fa.fa-pencil
+										h4 Web Design
+										p Likening it to the traditional brick-and-mortar experience, we know how important it is for your potential customers to get excited when they visit your business online. Our front-end experts ensure that design acuity and usability are on full display for your users to see and interact with. We use the latest techniques in HTML5, CSS3, and JavaScript to create beautiful interfaces and interactions that instill confidence in your brand while making it easy to navigate through your site; helping to get your users where you want them to go.
+									// 4 end
+				// Services end
+				// Order
+				section.no-padding
+					.order-holder
+						.container
+							.row
+								.col-md-8
+									h3 Download our deck to see more work
+								.col-md-3
+									a.btn.anim-button.trans-btn.transition.fl-l(href="https://www.dropbox.com/s/zobqdzu5mby2ulf/TVG-AGENCY-DECK-MAY-2015.pdf?dl=0")
+										span Download
+										i.fa.fa-download
+				// Order end
+				// Testimonials
+				section.parallax-section.small-padding#sec5
+					.overlay
+					.bg(style="background:#444" data-top-bottom="transform: translateY(150px);" data-bottom-top="transform: translateY(-150px);")
+					.container
+						h2 Testimonials
+						.separator-image
+							img(src="img/separator.png" alt="")
+						.testimonials-slider-holder
+							.testimonials-slider.owl-carousel
+								// 1
+								.item
+									.testi-item
+										h3 George Kunhardt, CEO Goat Tape
+										p "I couldn’t be more pleased with how the Vaan Group created our website. 100% of our sales come from the web so it’s critical that our site be unique, simple to navigate / use and most importantly be beautifully crafted. The Vaan group led by Xavier and Chuong accomplished this with flying colors."
+								// 1 end
+								// 2
+								.item
+									.testi-item
+										h3 Lisa Karvellas, Co-Founder + Owner + Executive Chef Cedar Lakes Estate
+										p "Working with the Vaan Group during the inception and execution of Offsite Camp was crucial to its success in the first year. They brought so much passion and excitement to the table - always inspiring us to take smart risks and aim higher. They graciously shared their connections with us and secured several keynote speakers, sponsorship partnerships and influential attendees. X and Chuong really care about the projects they work on and we feel so fortunate to have had them involved in establishing the Offsite brand."
+								// 2 end
+								// 3
+								.item
+									.testi-item
+										h3 Joseph Savino, Founder JUISI
+										p "I'm thrilled with the JUISI ecommerce store. Vision. Execution. A job well done."
+								// 3 end
+								// 4
+								.item
+									.testi-item
+										h3 James La, Founder Niucoco
+										p "TVG has an eye for what's coming next. They're a great go-to for design ideas in terms of what's in the now."
+								// 4 end
+								// 5
+								.item
+									.testi-item
+										h3 Kendra Ratliff, Founder Sko There
+										p "I sat down with Chuong and Xavier, founders of the The Vaan Group to initially discuss start-up culture and funding and I ended up walking away from that meeting with a new design agency. I fell in love with their passion, enthusiasm and we connected on so many different levels. From the very beginning they understood my vision and they were able to translate everything into a beautifully designed and user-friendly app. Their communication and dedication to my project was everything I needed in an agency and I could not imagine my business without them."
+								// 5 end
+								// 6
+								.item
+									.testi-item
+										h3 Derek Baynton, Co-Founder Offsite Camp
+										p "Without our collaboration with the Vaan Group, Offsite wouldn't be where it is today. They were an invaluable resource in getting this idea off the ground, leveraging their expertise in design along with an intuitive understanding of brand values. We're so lucky to have worked with them and look forward continuing the relationship in the future! "
+								// 6 end
+							.customNavigation
+								a.next-slide.transition
+									i.fa.fa-angle-right
+								a.prev-slide.transition
+									i.fa.fa-angle-left
+				// Testimonials end
+			// Content end
+			// Share container
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor
+
+
