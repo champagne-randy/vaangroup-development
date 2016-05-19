@@ -1,0 +1,98 @@
+//-
+	ToDo:
+	- prep for roots-contentful integration by making this template abstract 
+
+
+
+extends ./_layout
+
+block theContent
+
+
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			.fixed-title
+				span Shopify
+			// =============== content  ===============
+			.content
+				// section  page title
+				section.parallax-section
+					.overlay
+					.bg(style="background:#77B751;" data-top-bottom="transform: translateY(200px);" data-bottom-top="transform: translateY(-200px);")
+					.container
+						h2 Shopify
+						.separator
+						h3.subtitle With 'more ways to sell than ever before' it's no wonder why it's our favorite platform.
+					a.custom-scroll-link.sect-scroll(href="#sec1")
+						i.fa.fa-angle-double-down
+				// section  page title end                   	
+				.sections-bg
+				section#sec1
+					.container.column-container
+						.row
+							.col-md-12
+								article
+									ul.blog-title
+										li
+											a.tag(href="#") 06 January 2016
+										li &#45; 
+										li
+											a.tag(href="#") Technology
+									.blog-media
+										.custom-slider-holder
+											.custom-slider.owl-carousel
+												.item
+													img.respimg(src="img/shopify/goattape.png" alt="")
+												.item
+													img.respimg(src="img/shopify/juisi.png" alt="")
+												.item
+													img.respimg(src="img/shopify/niucoco.png" alt="")
+												.item
+													img.respimg(src="img/shopify/easternkingdom.png" alt="")
+                                            
+												.item
+													img.respimg(src="img/shopify/cavana.png" alt="")
+												.item
+													img.respimg(src="img/shopify/monocleorder.png" alt="")
+											.customNavigation
+												a.prev-slide
+													i.fa.fa-angle-left
+												a.next-slide
+													i.fa.fa-angle-right
+									.blog-text
+										h2 We &lt;3 Shopify
+										p(style="font-size:150%;") Magento, BigCommerce, BigCartel, Volusion, Squarespace, and Shopify...oh my. With so many e-commerce solutions to choose from, how do you wade through the features, pitches, and behavioral ads to choose the right one? Here we describe why we (and our clients) love Shopify more than all the rest. <a href="img/shopify/why-shopify.pdf" style="color:blue;">Want more info? Download the deck</a>
+										
+										h3 DESIGN
+										p(style="font-size:150%;") Design performs two essential functions for your e-commerce site: (1) Branding. It goes without saying how important digital branding is in an increasingly competitive e-commerce environment & (2) Converting. Well-executed design makes the purchasing experience simple and delightful which significantly increases conversion rate. Shopify offers one of the most flexible yet powerful markup languages for designers and developers. Themes can be complete customized from the bottom up allowing for fresh front-end design combined with powerful backend e-commerce feature management. From custom order form workflows to wholesale collections, we have yet to come across a usability challenge that couldn't be executed flawlessly with Shopify. 
+
+										h3 DEVELOPMENT
+										p(style="font-size:150%;") Did we mention the powerful markup language, <a href="http://shopify.github.io/Timber/" style="color:blue;">Liquid? Not only is it well documented</a> , but it has a base framework that allows developers to easily build powerful themes quickly and efficiently on the Shopify platform. It's extensible (meaning: developers can easily build on the framework to create new features and functions) and its template-based so unique views can be easily created and manipulated. For example, this flexibility allowed us to build a custom order form for Goattape.com that captured customer information, imported their custom logo, and allowed for a one-click invoice workflow for the managers of Goat Tape. The result? A 90% reduction in email transmissions and a 60% increase in inquiries.
+
+										a(href="http://shopify.github.io/Timber/")
+											img.respimg(src="img/shopify/timber-1.png")
+
+										h3 EASY CMS
+										p(style="font-size:150%;") One of the most important considerations in the day-to-day operation of your e-commerce store is YOU, the store administrator. You need the ability to run, manage, edit, change, tweak, refine (just to name a few) your store to ensure you're constantly driving sales and optimizing conversions. Whether it's creating discount codes, sending out email newsletters, changing banner images, announcing sales, managing orders, or executing a digital marketing campaign - Shopify's CMS gives you an easy-to-use interface that makes performing these basic e-commerce tasks simple and straight-forward. Shopify boasts, in our opinion, the sleekest user interface making it easy to do pretty much everything —   from editing shipping options to confirming orders.
+										img.respimg(src="img/shopify/shopifyDashboard.png")
+
+										h3 AN APP FOR THAT
+										p(style="font-size:150%;") After the first month of excitement wears off, inevitably, you're going to be thinking of cool and novel ways to augment, add to, and optimize your e-commerce store. Maybe you want to add new product choices, create a password protected wholesale portal, or sync your products with Amazon. Well, we have good news — Shopify has an extensive app library that gives store owners the ability to add new features and functions to their store with the click of a button. For example, we've integrated apps to create a complex product option list for customers who want to by presciption lenses on MONOCLEORDER.com
+			// Content end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end 
+	.left-decor
+	.right-decor
+
+
+
+
+
+
+
+
+
