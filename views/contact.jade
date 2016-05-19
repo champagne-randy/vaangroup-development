@@ -1,6 +1,55 @@
-//- metadata code block
-include ./includes/head
+extends ./_layout
+
+block theContent
 
 
-body
-	h1 Contact
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== content-holder ===============
+		.content-holder.elem.scale-bg2.transition3
+			// =============== content ===============
+			//  Page title
+			.fixed-title
+				span Contact Us
+			//  Page title end
+			.content.full-height
+				// background
+				.full-height-wrap.fixed-wrap
+					.bg(style="background-image:url(img/contact-bg.jpg)")
+					.overlay
+				// background end
+				// custom-inner
+				.custom-inner.contact-inner
+					.container
+						h2 Contact Us
+						.separator
+						.row
+							.col-md-4
+								p Have a project you want to get off the ground...Or maybe you just want to chat...Either way, drop us a line — we'd love to hear from you!
+								ul.contact-list
+									li
+										a(href="#") 5 Devoe St. 2nd Floor, Brooklyn, NY 11211
+									li
+										a(href="#") +1 (845) 399-5890
+									li
+										a(href="#") info@vaangroup.com
+							.col-md-8
+								#contact-form
+									#message
+									form#contactform(method="post" action="http://formspree.io/info@vaangroup.com" name="contactform")
+										input#name.inputForm2(name="name" type="text" onClick="this.select()" value="Name")
+										input#email(name="email" type="text" onClick="this.select()" value="E-mail")
+										textarea#comments(name="comments" onClick="this.select()") Message
+										input#submit.send_message.transition(type="submit"  value="Send Message")
+				// custom-inner end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor
+
+
+
+
+
