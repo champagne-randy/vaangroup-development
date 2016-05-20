@@ -1,6 +1,66 @@
-//- metadata code block
-include ./includes/head
+extends ./_layout
+
+block theContent
 
 
-body
-	h1 Workspace
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			.fixed-title
+				span Workspace
+			// =============== content  ===============
+			.content
+				// section  page title
+				section.parallax-section
+					.overlay
+					.bg(style="background-image:url(img/workspace/workspace-bg.jpg)" data-top-bottom="transform: translateY(200px);" data-bottom-top="transform: translateY(-200px);")
+					.container
+						h2 Workspace Williamsburg
+						.separator
+						h3.subtitle We manage & operate a boutique shared workspace in Brooklyn, New York.
+					a.custom-scroll-link.sect-scroll(href="#sec1")
+						i.fa.fa-angle-double-down
+				// section  page title end
+				.sections-bg
+				section#sec1
+					.container.column-container
+						.row
+							.col-md-12
+								.blog-text
+									h3 W O R K S P A C E W I L L I A M S B U R G
+									p(style="font-size:150%;") Located in prime Williamsburg, just off the L train, Workspace Williamsburg offers affordable private and shared office spaces in a collaborative, eclectic environment. For inquiries please email: 
+										ul
+											li(style="color:blue; font-size:200%;")
+												a(href="mailto:inquiries@workspacewilliamsburg.com") inquiries@workspacewilliamsburg.com
+											li(style="color:blue; font-size:200%;") 201.218.2093 to schedule an appointment.
+									img.respimg(src="img/workspace/workspace-map.jpg")
+								article
+									.blog-media
+										.custom-slider-holder
+											.custom-slider.owl-carousel
+												.item
+													img.respimg(src="img/workspace/ws-0.jpg" alt="")
+												.item
+													img.respimg(src="img/workspace/ws-1.jpg" alt="")
+												.item
+													img.respimg(src="img/workspace/ws-2.jpg" alt="")
+												.item
+													img.respimg(src="img/workspace/ws-3.jpg" alt="")
+                                            
+												.item
+													img.respimg(src="img/workspace/ws-4.jpg" alt="")
+												.item
+													img.respimg(src="img/workspace/ws-5.jpg" alt="")
+											.customNavigation
+												a.prev-slide
+													i.fa.fa-angle-left
+												a.next-slide
+													i.fa.fa-angle-right
+			// Content end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor
