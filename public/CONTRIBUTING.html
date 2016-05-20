@@ -1,0 +1,50 @@
+<h3 id="setup">Setup</h3>
+<ul>
+<li>make sure <a href="http://nodejs.org">node.js</a> and <a href="http://roots.cx">roots</a> are installed</li>
+<li>clone this repo down and <code>cd</code> into the folder</li>
+<li>run <code>npm install</code></li>
+<li>run <code>roots watch</code></li>
+</ul>
+<h4 id="optional-confgurations-to-app-cofee">optional confgurations to app.cofee</h4>
+<ul>
+<li>add this config to &#39;app.cofee&#39; to enable clean urls<pre><code>server:
+  clean_urls: true
+</code></pre></li>
+<li>add this config to create project global varibales that can be accessed in any template file<pre><code>locals:
+  developer: &#39;Randy Champagne&#39;
+</code></pre></li>
+<li>you can use locals in a jade template like so<pre><code>p this project was developped by #[span= developer]
+</code></pre></li>
+<li>don&#39;t forget to add production &#39;locals&#39; to &#39;app.production.cofee&#39;</li>
+</ul>
+<h4 id="using-sass-for-css-pre-processing">using SASS for css pre-processing</h4>
+<ul>
+<li>install accord and node-sass to <a href="https://github.com/jenius/accord/issues/108">enable SASS compilation</a> <code>npm install --save accord node-sass</code></li>
+<li>import accord and node-sass in dev and prod app manifest <pre><code>accord = require &#39;accord&#39;
+sass   = accord.load &#39;node-sass&#39;
+</code></pre></li>
+<li>On line 14, change the line that says <code>css_pipeline(files: &#39;assets/css/*.styl&#39;)</code> to <code>css_pipeline(files: &#39;assets/css/*.scss&#39;)</code></li>
+<li>At the end of the file tab in once and add the final lines of code:<pre><code>  sass:
+      pretty: true
+</code></pre></li>
+<li>Change <code>.styl</code> files with .scss files. Delete all the files in the <code>assets/css</code> directory of your project. Create a new file in <code>assets/css</code> named <code>master.scss</code>. This file is where you will start creating your sass files.</li>
+<li>Use <code>.scss</code> file extension instead of <code>.sass</code> for all sass files</li>
+</ul>
+<h4 id="using-a-browserify-babel-js-pipeline">using a browserify-babel js pipeline</h4>
+<ul>
+<li>install <a href="https://github.com/carrot/roots-browserify">roots-browserify</a> module <code>npm install roots-browserify babelify --save</code></li>
+<li>import modules into app.cofee <pre><code>browserify = require &#39;roots-browserify&#39;
+babelify   = require &#39;babelify&#39;
+</code></pre></li>
+<li>add extension configuration<pre><code>  browserify
+    files: &#39;assets/js/main.coffee&#39;
+    sourceMap: true
+    transform: babelify
+    out: &#39;js/build.js&#39;
+</code></pre></li>
+</ul>
+<h3 id="deployment">Deployment</h3>
+<ul>
+<li>If you just want to compile the production build, run <code>roots compile -e production</code> and it will build to public.</li>
+<li>To deploy your site with a single command, run <code>roots deploy -to XXX</code> with <code>XXX</code> being whichever <a href="https://github.com/carrot/ship#usage">ship</a> deployer you want to use.</li>
+</ul>

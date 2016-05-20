@@ -1,6 +1,48 @@
-//- metadata code block
-include ./includes/head
+//-
+	- from Xavier: About us (which reminds me, if you can create a white bg on preload so the surprise effect is ruined by youtube preload)
+	- I'm not sure what this means!
+
+extends ./_layout
+
+block theContent
 
 
-body
-	h1 About
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			// Fixed title
+			.fixed-title
+				span Welcome
+			// Fixed title end
+			// =============== Content  ===============
+			.content.full-height.big-index
+				.full-height-wrap(data-top-bottom="transform: translateY(250px);" data-bottom-top="transform: translateY(-250px);")
+					.media-container
+						.video-mask
+						// =============== add you video id  in data-vid="" if you want add sound change data-mv="1" on data-mv="0" ===============
+						.background-video(data-vid="pXYctPp2V6A" data-mv="1")
+					.bg.mob-bg(style="background:#333")
+					.hero-title
+						h2 We are VAAN a forward-thinking, design-driven, and client-loving digital agency
+						.separator-image
+							img(src="img/separator.png" alt="")
+						h3.subtitle
+							a(href="index.html") See works
+			// Content end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor
+
+
+
+
+
+
+
+
+
+
