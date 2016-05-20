@@ -616,7 +616,6 @@ function initgalheight() {
 }
 //   Init all fucntions  ------------------
 $(document).ready(function() {
-    console.log("Hello from scripts.js")
     
     initOutdoor();
     initparallax();
